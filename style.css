@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*header css*/
+div.header, div.footer{
+    background-color: aliceblue;
+    text-align: center;
+    padding: 30px;
+}
+
+
+/*navigation css*/
+div.nav ul{
+    display: block;
+    background-color: azure;
+}
+
+div.nav ul::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+div.nav li{
+    display: inline;
+}
+
+div.nav a, div.nav input{
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: azure;
+    color: black;
+    vertical-align: middle;
+}
+
+div.nav input{
+    padding: 0;
+    margin: 15px;
+    border: 1px groove;
+}
+
+div.nav a:hover, div.nav input:hover, div.nav input:focus{
+    outline: none;
+    background-color: black;
+    color: white;
+}
+
+
+/*body*/
+div.leftside div, div.rightside div, div.aboutme, div.follow, div.footer{
+    background-color: azure;
+    color: black;
+    margin: 10px;
+    text-align: justify;
+    padding: 15px;
+}
+
+div.leftside p::first-letter{
+    font-size: 25px;
+}
+
+div.aboutme > .fakeimg{
+    background-color: blueviolet;
+    width: 200px;
+    height: 200px;
+}
+/*Popular Posts*/
+div.popularposts > a{
+    display: block;
+    background-color: gainsboro;
+    margin-bottom: 10px;
+    vertical-align: middle;
+    padding: 15px;
+    color: blueviolet;
+}
+
+div.popularposts > a:hover{
+    background-color: black;
+    color: white;
+}
+
+/*Social Media Links*/
+div.follow > a{
+    display: inline-block;
+    padding: 10px 25px;
+    margin: 5px 15px;
+    background-color: lightblue;
+    color: blueviolet;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    line-height: 0.9;
+}
+
+[href="#facebook"]:hover{
+    background-color: rgba(0, 0, 255, 0.87);
+    color: white;
+}
+
+[href="#twitter"]:hover{
+    background-color: rgb(0, 204, 255);
+    color: white;
+}
+
+[href="#Youtube"]:hover{
+    background-color: red;
+    color: white;
+}
+
+[href="#Instagram"]:hover{
+    background-color: rgb(190, 3, 190);
+    color: white;
+}
+
+/*footer*/
+div.footer{
+    margin: 0;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;   
+    background-color: aliceblue;
+}
+
+/*setting for destop devices*/
+@media only screen and (min-width:800px){
+    div.leftside{
+        display: inline-block;
+        width: 75%;
+        float: left;
+        margin: 30px 0;
+    }
+    div.rightside{
+        width:25%;
+        display: inline-block;
+    }
+    div.leftside > h3, div.leftside > p{
+        margin: 20px 0;
+    }
+
+    div.leftside > div{
+        margin-bottom: 30px;
+    }
+}
